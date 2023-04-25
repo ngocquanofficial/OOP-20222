@@ -1,0 +1,21 @@
+------------------------ 2.1 ------------------------
+Xin chao 
+ cac ban!
+Hello    world!
+------------------------ 6.2 ------------------------
+What's your name?
+Ngoc Quan
+How old are you?
+20
+How tall are you (m)?
+1.68Mrs/Ms. Ngoc Quan, 20 years old. Your height is 1.68.
+------------------------ 6.3 ------------------------
+Please give your number n: 7
+Your Triangle
+       *       
+      ***      
+     *****     
+    *******    
+   *********   
+  ***********  
+ ************* 
