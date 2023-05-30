@@ -1,0 +1,5 @@
+Question : After the call of swap(jungleDVD, cinderellaDVD) why does the title of these two objects still remain? 
+Answer: Because Java is a passing by value language, everything happening inside the function does not affect the value outside the scope of the function.
+
+Question : After the call of changeTitle(jungleDVD, cinderellaDVD.getTitle()) why is the title of the JungleDVD changed? 
+Answer : After modifying the title of jungleDVD using the code "dvd.setTitle(title)", we assign a new DigitalVideoDisc to the variable dvd. However, despite this change, the value of jungleDVD remains unaffected.
