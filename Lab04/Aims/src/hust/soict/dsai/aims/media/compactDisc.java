@@ -1,7 +1,7 @@
 package hust.soict.dsai.aims.media;
 import java.util.ArrayList;
 
-public class compactDisc extends Disc {
+public class compactDisc extends Disc implements Playable {
 	private String artist;
 	private ArrayList<Track> tracks = new ArrayList<Track>();
 	private String director;
@@ -35,6 +35,12 @@ public class compactDisc extends Disc {
 			totalLength = totalLength + track.getLength();
 		}
 		return totalLength;
+	}
+	
+	public void play() {
+		for (Track track: tracks) {
+			track.play();
+		}
 	}
 
 	

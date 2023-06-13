@@ -24,5 +24,9 @@ public class Media {
 	public Media() {
 		// TODO Auto-generated constructor stub
 	}
+	
+	public boolean equals(Media media) {
+		return this.getTitle() == media.getTitle();
+	}
 
 }
