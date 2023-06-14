@@ -10,13 +10,12 @@ public class Aims {
         DigitalVideoDisc firstDVD = new DigitalVideoDisc("The Lion King", "Animation", "Roger Allers", 87, 19.95f);
         DigitalVideoDisc secondDVD = new DigitalVideoDisc("Star Wars", "Science Fiction", "George Lucas", 87, 24.95f);
         DigitalVideoDisc thirdDVD = new DigitalVideoDisc("Aladin", "Animation", 18.99f);
+        DigitalVideoDisc fouthDVD = new DigitalVideoDisc("Aladin", "Animation", 18.99f);
         anOrder.addMedia(secondDVD);
         anOrder.addMedia(firstDVD);
         anOrder.addMedia(thirdDVD);
-        anOrder.removeMedia(thirdDVD);
-        System.out.println(thirdDVD.getId());
+        anOrder.removeMedia(fouthDVD);
         System.out.println(anOrder.totalCost());
-
 
         // For the Store class
 //        Store myStore = new Store();
