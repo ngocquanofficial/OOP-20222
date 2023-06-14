@@ -5,11 +5,15 @@ public class compactDisc extends Disc implements Playable {
 	private String artist;
 	private ArrayList<Track> tracks = new ArrayList<Track>();
 	private String director;
-	public compactDisc() {
+	public compactDisc(String artist) {
 		// TODO Auto-generated constructor stub
 		super();
-
+		this.artist = artist;
 	}
+	public compactDisc(String title, String category, float cost ) {
+		super(title, category, cost);
+	}
+
 	public String getDirector() {
 		return director;
 	}
@@ -36,6 +40,12 @@ public class compactDisc extends Disc implements Playable {
 		}
 		return totalLength;
 	}
+	
+    public String toString() {
+        return String.format("DVD - %s - %s - %s - %s - %s : %s", this.id, this.title, this.category, this.director, this.length, this.cost);
+    }
+	
+	
 	
 	public void play() {
 		for (Track track: tracks) {
