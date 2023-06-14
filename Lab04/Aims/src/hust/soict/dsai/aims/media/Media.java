@@ -20,9 +20,18 @@ public class Media {
 		return cost;
 	}
 	
-	
 	public Media() {
 		// TODO Auto-generated constructor stub
 	}
+	
+    public boolean equals(Object obj){
+    	if (!(obj instanceof Media)) {
+    		// when the object is not a Media instance
+    		return false;
+    	}
+    	Media media = (Media) obj;
+    	
+        return  this.getTitle() ==  media.getTitle();
+    }
 
 }
