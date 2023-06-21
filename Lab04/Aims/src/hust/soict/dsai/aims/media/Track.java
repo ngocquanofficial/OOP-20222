@@ -1,41 +1,34 @@
 package hust.soict.dsai.aims.media;
 
 public class Track implements Playable{
-	private int length;
-	private String title;
-	
-
-	public Track() {
-		// TODO Auto-generated constructor stub
-	}
-
-
-	public int getLength() {
-		return length;
-	}
-
-	public String getTitle() {
-		return title;
-	}
-	
-	public void play() {
-		System.out.println("Playing DVD: " + this.getTitle());
-		System.out.println("DVD length: " + this.getLength());
-	}
-	
-	
-	public boolean equals(Object obj) {
-		if (! (obj instanceof Track)) {
-			// if object is not a Track instance
-			return false;
-		}
-		//when obj is a Track object
-		Track track = (Track) obj;
-		return this.getTitle() == track.getTitle() && this.getLength() == track.getLength();
-		
-	}
-	
-	
-	
-
+    private String title = "";
+    private int length = 0;
+    public String getTitle() {
+        return title;
+    }
+    public int getLength() {
+        return length;
+    }
+    public Track(String title, int length) {
+        this.title = title;
+        this.length = length;
+    }
+    
+    public Track() {
+    }
+    public boolean equals(Track track){
+        return this.getTitle() == track.getTitle() & this.getLength() == track.getLength();
+    }
+    public void play(){
+        System.out.println("Playing DVD: "+this.getTitle());
+        System.out.println("DVD length: "+this.getLength()); 
+    }
+    public void setTitle(String nextLine) {
+        this.title = nextLine;
+    }
+    public void setLength(int nextInt) {
+        this.length = nextInt;
+    }
+    
+    
 }
