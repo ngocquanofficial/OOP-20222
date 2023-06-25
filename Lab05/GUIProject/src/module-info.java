@@ -2,8 +2,9 @@
  * 
  */
 /**
- * @author Asus
+ * @author Admin
  *
  */
 module GUIProject {
+	requires java.desktop;
 }
